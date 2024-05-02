@@ -46,14 +46,14 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     image:  {type:DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: true,
-        notEmpty: {
-          args: true,
-          msg: "image cannot be null",
-        },
-      },
+      allowNull: true,
+      // validate: {
+      //   notNull: true,
+      //   notEmpty: {
+      //     args: true,
+      //     msg: "image cannot be null",
+      //   },
+      // },
     },
     price:  {type:DataTypes.INTEGER,
       allowNull: false,
