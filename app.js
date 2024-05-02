@@ -10,6 +10,10 @@ const morgan = require("morgan");
 const router = require("./routes/index");
 const errorHandler = require("./middlewares/errorHandler");
 
+app.listen(process.env.PORT, () => {
+  console.log(`Running on port ${process.env.PORT}`);
+});
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
