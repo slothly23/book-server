@@ -5,7 +5,7 @@ module.exports = {
     username: "root",
     password: "1a2345",
     database: "book",
-    host: "127.0.0.1",
+    host: "localhost",
     dialect: "mysql",
     dialectModule: require('mysql2'),
   },
