@@ -1,9 +1,0 @@
-{
-    "development": {
-       "username": "root",
-       "password": "1a2345",
-       "database": "book",
-       "host": "localhost",
-       "dialect": "mysql"
-     }
-}
