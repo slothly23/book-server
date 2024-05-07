@@ -21,9 +21,12 @@ const upload = multer({
     storage: storage
 })
 
-router.post("/register", UserController.userRegister)
-router.post("/login", UserController.userLogin)
+// router.post("/register", UserController.userRegister)
+// router.post("/login", UserController.userLogin)
 // router.use(authentication);
+router.get("/", (request, response) => {
+  response.send("Express server working")
+})
 router.post("/add/book", upload.single('image'), BookController.addBook)
 router.get("/book", BookController.getBooks)
 router.get("/book/:id", BookController.getBook)
